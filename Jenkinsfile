@@ -31,8 +31,8 @@ pipeline {
                 sh 'terraform plan -out=tfplan1'
             }
         }
-    }
-}
+    
+
     //     stage('Apply Terraform') {
     //         steps {
     //             // Apply the Terraform plan
@@ -58,8 +58,9 @@ pipeline {
     //     success {
     //         echo 'Terraform applied successfully!'
     //     }
+    
     //     failure {
 //             echo 'There was an error applying Terraform!'
 //         }
-//     }
-// }
+    }
+}
