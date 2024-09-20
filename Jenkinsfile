@@ -28,7 +28,7 @@ pipeline {
         stage('Plan Terraform') {
             steps {
                 // Create a Terraform plan
-                sh 'terraform plan -out=tfplan'
+                sh 'terraform plan -out=tfplan1'
             }
         }
     }
