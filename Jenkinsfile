@@ -31,7 +31,8 @@ pipeline {
                 sh 'terraform plan -out=tfplan'
             }
         }
-
+    }
+}
 //         stage('Apply Terraform') {
 //             steps {
 //                 // Apply the Terraform plan
