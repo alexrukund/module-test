@@ -32,33 +32,33 @@ pipeline {
             }
         }
 
-    //     stage('Apply Terraform') {
-    //         steps {
-    //             // Apply the Terraform plan
-    //             input message: 'Approve Terraform apply?', ok: 'Apply'
-    //             sh 'terraform apply tfplan'
-    //         }
-    //     }
+//         stage('Apply Terraform') {
+//             steps {
+//                 // Apply the Terraform plan
+//                 input message: 'Approve Terraform apply?', ok: 'Apply'
+//                 sh 'terraform apply tfplan'
+//             }
+//         }
 
-    //     stage('Cleanup') {
-    //         steps {
-    //             // Optionally, remove the plan file
-    //             sh 'rm -f tfplan'
-    //         }
-    //     }
-    // }
+//         stage('Cleanup') {
+//             steps {
+//                 // Optionally, remove the plan file
+//                 sh 'rm -f tfplan'
+//             }
+//         }
+//     }
 
-    // post {
-    //     always {
-    //         // Always run this block, regardless of success or failure
-    //         archiveArtifacts artifacts: '**/*.tfstate', fingerprint: true
-    //         echo 'Cleanup actions can go here.'
-    //     }
-    //     success {
-    //         echo 'Terraform applied successfully!'
-    //     }
-        failure {
-            echo 'There was an error applying Terraform!'
-        }
-    }
-}
+//     post {
+//         always {
+//             // Always run this block, regardless of success or failure
+//             archiveArtifacts artifacts: '**/*.tfstate', fingerprint: true
+//             echo 'Cleanup actions can go here.'
+//         }
+//         success {
+//             echo 'Terraform applied successfully!'
+//         }
+//         failure {
+//             echo 'There was an error applying Terraform!'
+//         }
+//     }
+// }
